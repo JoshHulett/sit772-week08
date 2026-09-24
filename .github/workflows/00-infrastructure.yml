@@ -3,8 +3,6 @@ name: 00 - Infrastructure
 on:
   push:
     branches: [main]
-    paths:
-      - 'terraform/**'
   workflow_dispatch:
 
 jobs:
