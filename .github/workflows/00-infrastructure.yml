@@ -19,6 +19,11 @@ jobs:
       ARM_SUBSCRIPTION_ID: ${{ fromJSON(secrets.AZURE_CREDENTIALS).subscriptionId }}
       ARM_TENANT_ID: ${{ fromJSON(secrets.AZURE_CREDENTIALS).tenantId }}
       TF_VAR_github_actions_sp_object_id: ${{ secrets.AZURE_SP_OBJECT_ID }}
+      TF_VAR_resource_group_name: ${{ vars.TF_RESOURCE_GROUP_NAME }}
+      TF_VAR_acr_name: ${{ vars.TF_ACR_NAME }}
+      TF_VAR_storage_account_name: ${{ vars.TF_STORAGE_ACCOUNT_NAME }}
+      TF_VAR_aks_cluster_name: ${{ vars.TF_AKS_CLUSTER_NAME }}
+      TF_VAR_aks_dns_prefix: ${{ vars.TF_AKS_DNS_PREFIX }}
     steps:
       - uses: actions/checkout@v4
 
