@@ -81,3 +81,8 @@ variable "tags" {
         Practical  = "Week08"
     }
 }
+
+variable "github_actions_sp_object_id" {
+    description = "Object ID for the GitHub Actions service principal"
+    type        = string
+}
