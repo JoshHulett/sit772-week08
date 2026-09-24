@@ -2,9 +2,12 @@ name: 04 - Deploy to Production
 
 on:
   workflow_run:
-    workflows: ["03 - Test Staging"]
+    workflows:
+      - "03 - Test Staging"
     types:
-      - completed 
+      - completed
+    branches:
+      - main
 
 jobs:
   deploy-production:
