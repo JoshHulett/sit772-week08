@@ -116,7 +116,7 @@ jobs:
       - backend-test
 
     # Build and push when code is pushed to main or manually triggered
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
 
     strategy:
       fail-fast: false
