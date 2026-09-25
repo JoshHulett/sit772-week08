@@ -1,10 +1,12 @@
 name: 01 - CI
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-  workflow_run:
-    workflows: ["00 - Infrastructure"]
-    types: [completed]
+  # workflow_run:
+  #   workflows: ["00 - Infrastructure"]
+  #   types: [completed]
 
 
 jobs:
