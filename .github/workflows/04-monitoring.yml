@@ -1,4 +1,4 @@
-name: 05 - Deploy Monitoring
+name: 04 - Deploy Monitoring
 
 on:
   workflow_dispatch:

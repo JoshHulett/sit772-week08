@@ -1,9 +1,9 @@
-name: 04 - Deploy to Production
+name: 03 - Deploy to Production
 
 on:
   workflow_run:
     workflows:
-      - "03 - Test Staging"
+      - "02 - Deploy and Test Staging"
     types:
       - completed
 
